@@ -14,7 +14,7 @@
 ## ℹ️ 이용 안내
 ### 요약
 - **유형** | 데이터는 `JSON` 형태로 제공됩니다.
-- **경로** | 데이터는 [/archive](https://github.com/donghoony1/weather/blob/master/archive)에 업로드됩니다.
+- **경로** | 데이터는 [/ARCHIVES](https://github.com/donghoony1/weather/blob/master/ARCHIVES)에 업로드됩니다.
 - **이름** | 데이터의 이름은 `donghoony1-weather_버전_시간.min.json` 형태로 제공됩니다. *시간: 데이터가 가공 완료된 일시를 년월일(YYYYMMdd)로 표기*
 - **갱신 주기** | 데이터는 매일 자정에 자동으로 수집 및 가공이 시작되고 처리가 완료되면 commit됩니다. *예상 소요 시간: 1시간 30분*
 - **보존 기간** | 30일이 지난 데이터는 자동으로 삭제됩니다.
