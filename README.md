@@ -38,7 +38,7 @@
                     - **wind** — 바람
                         - **speed** — 풍속(meter per second; m/s)
                         - **direction** — 풍향 *E, N, NE, NW, S, SE, SW, W*
-            - **WG84** — WG84 기반 위도, 경도 데이터
+            - **WGS84** — World Geodetic System(WGS84) 표준 위도, 경도 데이터
                 - **n** — 위도(Latitude; N)
                 - **e** — 경도(Longitude; E)
 
