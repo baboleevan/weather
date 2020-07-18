@@ -1,0 +1,22 @@
+{
+  "name": "korea-weather-auto-finder-js",
+  "version": "1.0.0",
+  "description": "[KR] 위도, 경도를 통하여 인접 행정구역의 날씨 정보를 제공하는 모듈입니다.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donghoony1/weather.git"
+  },
+  "keywords": [
+    "Weather"
+  ],
+  "author": "DongHoon Yoo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/donghoony1/weather/issues"
+  },
+  "homepage": "https://github.com/donghoony1/weather#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
