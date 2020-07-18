@@ -1,6 +1,6 @@
 {
   "name": "korea-weather-auto-finder-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "[KR] 위도, 경도를 통하여 인접 행정구역의 날씨 정보를 제공하는 모듈입니다.",
   "main": "index.js",
   "repository": {

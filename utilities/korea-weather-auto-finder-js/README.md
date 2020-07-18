@@ -1,11 +1,11 @@
 # korea-weather-auto-finder-js
-**위도, 경도를 통하여 인접 행정구역의 날씨 정보를 제공하는 모듈입니다.**
+**위도, 경도를 통하여 인접 행정구역의 기상 정보를 제공하는 모듈입니다.**
 
 ✅ Node.js 12+에서 사용할 수 있습니다.
 
 ✅ TypeScript를 지원합니다.
 
-⚠ 날씨 정보는 대한민국에 한하여 제공됩니다.
+ℹ️ 기상 정보는 대한민국에 한하여 제공됩니다.
 
 ```
 npm install korea-weather-auto-finder-js
@@ -15,7 +15,7 @@ npm install korea-weather-auto-finder-js
 ----
 
 # 사용 예
-다음 예는 서울특별시청의 위도, 경도 값을 입력하여 날씨 정보를 수신하는 방법을 설명합니다.
+다음 예는 서울특별시청의 위도, 경도 값을 입력하여 기상 정보를 수신하는 방법을 설명합니다.
 
 ```js
 const WeatherAF = require('korea-weather-auto-finder-js');
@@ -42,12 +42,12 @@ const WeatherAFApp = new WeatherAF(null, (app) => {
 
 ### 매개변수(옵션)
 - **options** (Object) — 모듈의 객체 생성을 사용자화할 수 있는 옵션입니다.
-    - **endpoint** (String) — 날씨 정보 데이터베이스를 제공하는 서버입니다. [날씨 정보 데이터베이스의 규격](https://github.com/donghoony1/weather/blob/master/README.md)을 참고하세요. 기본 값은 `https://raw.githubusercontent.com/donghoony1/weather/master/ARCHIVES/donghoony1_weather_2_latest.min.json`입니다. 제공되는 날씨 정보 데이터베이스를 더 빠른 서버로 미러한 후 참조할 수 있습니다.
-    - **attemptThreshold** (Number) — 날씨 정보 데이터 수신 실패 시 재시도할 회수입니다. 기본 값은 5입니다.
+    - **endpoint** (String) — 기상 정보 데이터베이스를 제공하는 서버입니다. [기상 정보 데이터베이스의 규격](https://github.com/donghoony1/weather/blob/master/README.md)을 참고하세요. 기본 값은 `https://raw.githubusercontent.com/donghoony1/weather/master/ARCHIVES/donghoony1_weather_2_latest.min.json`입니다. 제공되는 기상 정보 데이터베이스를 더 빠른 서버로 미러한 후 참조할 수 있습니다.
+    - **attemptThreshold** (Number) — 기상 정보 데이터 수신 실패 시 재시도할 회수입니다. 기본 값은 5입니다.
     - **tooFarCriteria** (Number) — 탐색된 인접 행정구역이 너무 멀 경우 오류를 반환하는데 사용될 기준입니다. 오차는 제공된 위도, 경도로부터 인접 행정구역의 대표 위도, 경도의 오차의 합으로 계산됩니다. 기본 값은 2입니다.
     - **certaintyCriteria** (Number) — 순차 탐색 중 인접 행정구역이 발견될 경우 탐색을 조기 종료하는데 사용될 기준입니다. 오차 계산 방법은 **tooFarCriteria**와 같습니다. 기본 값은 0.001입니다.
     - **defaultPath** (String) — 캐시 데이터 파일이 저장될 경로입니다. 경로의 마지막에 `/`를 넣지 마십시오. 기본 값은 `process.cwd() + /.weatherAF`입니다.
-- **readyEventCallback** (Function) — 날씨 정보 데이터베이스를 성공적으로 내려받고 가공이 완료될 때 실행할 콜백 함수입니다.
+- **readyEventCallback** (Function) — 기상 정보 데이터베이스를 성공적으로 내려받고 가공이 완료될 때 실행할 콜백 함수입니다.
     - **app** (WeatherAF) — 생성된 원본 객체입니다.
 
 ## find
